@@ -56,10 +56,40 @@ async function updateBook(req, res, next) {
     }
 }
 
+async function createBookInfo(req, res, next) {
+    try {
+        let bookInfo = req.body;
+        if (!bookInfo.bookId) {
+            throw new Error("BookId é obrigatório.");
+        }        
+        bookInfo = await BookService.createBookInfo(bookInfo);
+        res.end();
+        logger.info(`POST /book/info - ${JSON.stringify(bookInfo)}`);
+    } catch (err) {
+        next(err);
+    }
+}
+async function updateBookInfo(req, res, next) {
+    try {
+        let bookInfo = req.body;
+        if (!bookInfo.bookId) {
+            throw new Error("BookId é obrigatório.");
+        }        
+        bookInfo = await BookService.updateBookInfo(bookInfo);
+        res.end();
+        logger.info(`PUT /book/info - ${JSON.stringify(bookInfo)}`);
+    } catch (err) {
+        next(err);
+    }
+}
+
+
 export default {
     createBook,
     getBooks,
     getBook,
     deleteBook,
-    updateBook
+    updateBook,
+    createBookInfo,
+    updateBookInfo
 }

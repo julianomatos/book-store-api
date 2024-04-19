@@ -1,5 +1,6 @@
 import BookRepository from "../repositories/book.repository.js";
 import AuthorRepository from "../repositories/author.repository.js";
+import BookInfoRepository from "../repositories/bookInfo.repository.js";
 
 async function createBook(book) {
     if (await AuthorRepository.getAuthor(book.author_id)) {
@@ -27,10 +28,19 @@ async function updateBook(book) {
     throw new Error("O author_id informado não existe.");
 }
 
+async function createBookInfo(bookInfo) {
+    await BookInfoRepository.createBookInfo(bookInfo);
+}
+async function updateBookInfo(bookInfo) {
+    await BookInfoRepository.updateBookInfo(bookInfo);
+}
+
 export default {
     createBook,
     getBooks,
     getBook,
     deleteBook,
-    updateBook
+    updateBook,
+    createBookInfo,
+    updateBookInfo
 }

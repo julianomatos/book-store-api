@@ -1,3 +1,9 @@
 2024-04-17T04:28:10.581Z [livraria-api] error GET  - password authentication failed for user "iiusoxuk"
 2024-04-19T16:37:45.176Z [livraria-api] error GET  - password authentication failed for user "iiusoxuk"
 2024-04-19T16:38:24.247Z [livraria-api] error GET  - password authentication failed for user "iiusoxuk"
+2024-04-19T18:27:35.929Z [livraria-api] error POST  - BookId é obrigatório.
+2024-04-19T18:28:37.287Z [livraria-api] error POST  - book is not defined
+2024-04-19T18:32:13.212Z [livraria-api] error POST  - mongodb.Client is not a constructor
+2024-04-19T18:36:49.781Z [livraria-api] error POST  - mongodb.Client is not a constructor
+2024-04-19T18:39:33.499Z [livraria-api] info POST /book/info - undefined
+2024-04-19T20:29:12.134Z [livraria-api] error PUT  - BookService.updateBookInfoBookInfo is not a function
