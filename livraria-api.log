@@ -1,3 +1,5 @@
 2024-04-17T04:28:10.581Z [livraria-api] error GET  - password authentication failed for user "iiusoxuk"
 2024-04-19T16:37:45.176Z [livraria-api] error GET  - password authentication failed for user "iiusoxuk"
 2024-04-19T16:38:24.247Z [livraria-api] error GET  - password authentication failed for user "iiusoxuk"
+2024-04-20T19:03:52.293Z [livraria-api] info GET /author
+2024-04-20T19:05:09.140Z [livraria-api] info GET /author
