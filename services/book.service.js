@@ -9,13 +9,16 @@ async function createBook(book) {
     throw new Error("O author_id informado não existe.");
 }
 
-async function getBooks() {
+async function getBooks(authorId) {
+    if (authorId) {
+        return await BookRepository.getBooksByAuthor(authorId);
+    }
     return await BookRepository.getBooks();
 }
 
-async function getBooksByAuthor(authorId){
-    return await BookRepository.getBooksByAuthor(authorId);
-}
+// async function getBooksByAuthor(authorId){
+//     return await BookRepository.getBooksByAuthor(authorId);
+// }
 
 async function getBook(id) {
     const book = await BookRepository.getBook(id);
@@ -69,5 +72,5 @@ export default {
     deleteReview,
     getBooksInfo,
     deleteBookInfo,
-    getBooksByAuthor
+    // getBooksByAuthor
 }

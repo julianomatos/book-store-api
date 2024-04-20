@@ -25,8 +25,8 @@ async function getBooks() {
         conn.release();
     }
 }
+
 async function getBooksByAuthor(idAuthor) {
-    console.log(idAuthor);
     const conn = await connect();
     try {
         const res = await conn.query("SELECT * FROM books WHERE author_id = $1", [idAuthor]);

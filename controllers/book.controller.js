@@ -16,21 +16,21 @@ async function createBook(req, res, next) {
 
 async function getBooks(req, res, next) {
     try {
-        res.send(await BookService.getBooks());
+        res.send(await BookService.getBooks(req.query.authorId));
         logger.info("GET /book");
     } catch (err) {
         next(err);
     }
 }
 
-async function getBooksByAuthor(req, res, next) {
-    try {
-        res.send(await BookService.getBooksByAuthor(parseInt(req.query.authorId)));
-        logger.info("GET /book?authorId");
-    } catch (err) {
-        next(err);
-    }
-}
+// async function getBooksByAuthor(req, res, next) {
+//     try {
+//         res.send(await BookService.getBooksByAuthor(parseInt(req.query.authorId)));
+//         logger.info("GET /book?authorId");
+//     } catch (err) {
+//         next(err);
+//     }
+// }
 
 async function getBook(req, res, next) {
     try {
@@ -147,5 +147,5 @@ export default {
     deleteReview,
     getBooksInfo,
     deleteBookInfo,
-    getBooksByAuthor
+    // getBooksByAuthor
 }

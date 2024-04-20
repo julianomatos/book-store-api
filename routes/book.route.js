@@ -14,6 +14,6 @@ router.put("/info", BookController.updateBookInfo);
 router.post("/review", BookController.createReview);
 router.delete("/:id/review/:index", BookController.deleteReview);
 router.delete("/info/:id", BookController.deleteBookInfo);
-router.get("/", BookController.getBooksByAuthor);
+// router.get("/", BookController.getBooksByAuthor);
 
 export default router;
