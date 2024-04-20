@@ -7,3 +7,50 @@
 2024-04-19T18:36:49.781Z [livraria-api] error POST  - mongodb.Client is not a constructor
 2024-04-19T18:39:33.499Z [livraria-api] info POST /book/info - undefined
 2024-04-19T20:29:12.134Z [livraria-api] error PUT  - BookService.updateBookInfoBookInfo is not a function
+2024-04-19T20:42:31.869Z [livraria-api] error GET  - BookRepositoryInfo is not defined
+2024-04-19T20:43:04.647Z [livraria-api] info GET /book
+2024-04-20T00:52:36.359Z [livraria-api] info GET /book
+2024-04-20T02:52:31.858Z [livraria-api] info GET /book/info
+2024-04-20T02:53:28.209Z [livraria-api] info GET /book/info
+2024-04-20T03:01:29.059Z [livraria-api] info POST /book/review
+2024-04-20T03:01:56.102Z [livraria-api] info GET /book/info
+2024-04-20T03:05:14.060Z [livraria-api] info POST /book/review
+2024-04-20T03:07:31.438Z [livraria-api] info DELETE /book/1/review/1
+2024-04-20T03:07:47.799Z [livraria-api] info DELETE /book/1/review/0
+2024-04-20T03:09:49.001Z [livraria-api] info PUT /book/info - undefined
+2024-04-20T03:10:29.170Z [livraria-api] info PUT /book/info - undefined
+2024-04-20T03:11:11.180Z [livraria-api] info PUT /book/info - undefined
+2024-04-20T03:11:22.623Z [livraria-api] info PUT /book/info - undefined
+2024-04-20T03:12:01.257Z [livraria-api] info PUT /book/info - undefined
+2024-04-20T03:12:10.827Z [livraria-api] error PUT  - BookId é obrigatório.
+2024-04-20T03:12:30.260Z [livraria-api] info PUT /book/info - undefined
+2024-04-20T03:14:11.488Z [livraria-api] info POST /book/info - undefined
+2024-04-20T03:14:28.566Z [livraria-api] info POST /book/info - undefined
+2024-04-20T03:14:46.906Z [livraria-api] info POST /book/info - undefined
+2024-04-20T03:14:58.560Z [livraria-api] info POST /book/info - undefined
+2024-04-20T03:15:10.879Z [livraria-api] info POST /book/info - undefined
+2024-04-20T03:15:19.778Z [livraria-api] info POST /book/info - undefined
+2024-04-20T03:15:40.647Z [livraria-api] info GET /book
+2024-04-20T03:15:47.152Z [livraria-api] info GET /book/info
+2024-04-20T03:15:57.394Z [livraria-api] info GET /book
+2024-04-20T03:17:46.512Z [livraria-api] error DELETE  - BookService.deleteProductInfo is not a function
+2024-04-20T03:18:28.096Z [livraria-api] info DELETE /book/info
+2024-04-20T03:18:49.298Z [livraria-api] info POST /book/info - undefined
+2024-04-20T03:37:14.452Z [livraria-api] info GET /author
+2024-04-20T03:37:24.352Z [livraria-api] info GET /book
+2024-04-20T03:38:28.957Z [livraria-api] info GET /book
+2024-04-20T03:42:17.849Z [livraria-api] info GET /book
+2024-04-20T03:46:57.044Z [livraria-api] info GET /book
+2024-04-20T03:47:40.081Z [livraria-api] info GET /book
+2024-04-20T03:48:04.549Z [livraria-api] info GET /book
+2024-04-20T03:48:56.433Z [livraria-api] info GET /book
+2024-04-20T03:51:27.503Z [livraria-api] info GET /book
+2024-04-20T03:53:36.993Z [livraria-api] info GET /book
+2024-04-20T03:56:17.921Z [livraria-api] info GET /book
+2024-04-20T04:07:52.401Z [livraria-api] info GET /book
+2024-04-20T04:08:11.745Z [livraria-api] info GET /book
+2024-04-20T04:08:21.266Z [livraria-api] info GET /book
+2024-04-20T04:08:28.315Z [livraria-api] info GET /book
+2024-04-20T04:09:04.879Z [livraria-api] info GET /book
+2024-04-20T04:09:35.612Z [livraria-api] info GET /book
+2024-04-20T04:13:21.558Z [livraria-api] info GET /book

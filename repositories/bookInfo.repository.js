@@ -82,6 +82,7 @@ async function deleteBookInfo(bookId) {
         await client.close();
     }
 }
+
 export default{
     createBookInfo,
     updateBookInfo, 
