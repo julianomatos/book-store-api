@@ -25,9 +25,12 @@ async function createSale(sale) {
     }
 }
 
-async function getSales(bookId) {
+async function getSales(bookId, authorId) {
     if (bookId) {
         return await SaleRepository.getSalesByBookId(bookId);
+    }
+    if (authorId) {
+        return await SaleRepository.getSalesByAuthorId(authorId);
     }
     return await SaleRepository.getSales();
 }

@@ -55,3 +55,10 @@
 2024-04-20T04:09:35.612Z [livraria-api] info GET /book
 2024-04-20T04:13:21.558Z [livraria-api] info GET /book
 2024-04-20T04:17:51.118Z [livraria-api] info GET /book
+2024-04-20T12:48:18.248Z [livraria-api] info GET /book
+2024-04-20T12:56:44.540Z [livraria-api] info GET /sale
+2024-04-20T12:59:19.356Z [livraria-api] info GET /sale
+2024-04-20T13:00:09.618Z [livraria-api] info GET /sale
+2024-04-20T13:01:57.680Z [livraria-api] info GET /sale
+2024-04-20T13:02:10.964Z [livraria-api] info GET /sale
+2024-04-20T13:04:29.551Z [livraria-api] info GET /sale

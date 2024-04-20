@@ -16,7 +16,7 @@ async function createBook(req, res, next) {
 
 async function getBooks(req, res, next) {
     try {
-        res.send(await BookService.getBooks(req.query.authorId));
+        res.send(await BookService.getBooks(req.query.bookId));
         logger.info("GET /book");
     } catch (err) {
         next(err);

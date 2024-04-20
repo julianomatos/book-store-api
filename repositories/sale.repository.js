@@ -26,10 +26,21 @@ async function getSales() {
     }
 }
 
-async function getSalesByProductId(productId) {
+async function getSalesByBookId(bookId) {
     const conn = await connect();
     try {
-        const res = await conn.query("SELECT * FROM sales WHERE product_id = $1", [productId]);
+        const res = await conn.query("SELECT * FROM sales WHERE book_id = $1", [bookId]);
+        return res.rows;
+    } catch (err) {
+        throw err;
+    } finally {
+        conn.release();
+    }
+}
+async function getSalesByAuthorId(authorId) {
+    const conn = await connect();
+    try {
+        const res = await conn.query("SELECT * FROM sales s INNER JOIN books b ON s.book_id = b.book_id WHERE b.author_id = $1", [authorId]);
         return res.rows;
     } catch (err) {
         throw err;
@@ -81,8 +92,9 @@ async function updateSale(sale) {
 export default {
     insertSale,
     getSales,
-    getSalesByProductId,
+    getSalesByBookId,
     getSale,
     updateSale,
-    deleteSale
+    deleteSale,
+    getSalesByAuthorId
 }

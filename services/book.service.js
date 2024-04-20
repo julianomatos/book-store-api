@@ -40,6 +40,7 @@ async function updateBook(book) {
 async function createBookInfo(bookInfo) {
     await BookInfoRepository.createBookInfo(bookInfo);
 }
+
 async function updateBookInfo(bookInfo) {
     await BookInfoRepository.updateBookInfo(bookInfo);
 }
